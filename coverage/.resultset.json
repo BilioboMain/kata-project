@@ -7,6 +7,12 @@
           null,
           1,
           1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
           18,
           null,
           null,
@@ -22,7 +28,6 @@
           null,
           1,
           1,
-          1,
           null,
           1,
           19,
@@ -33,6 +38,11 @@
           1,
           1,
           null,
+          null
+        ]
+      },
+      "/home/gleb/Documents/kata_project/lib/regular_item.rb": {
+        "lines": [
           null,
           null,
           1,
@@ -61,31 +71,25 @@
           1,
           10,
           null,
+          null
+        ]
+      },
+      "/home/gleb/Documents/kata_project/lib/sulfuras_item.rb": {
+        "lines": [
           null,
           null,
           1,
-          1,
-          6,
-          null,
-          6,
-          6,
-          null,
-          null,
           null,
           1,
           1,
-          5,
-          5,
-          null,
-          4,
-          4,
-          4,
-          null,
+          null
+        ]
+      },
+      "/home/gleb/Documents/kata_project/lib/conjured_item.rb": {
+        "lines": [
           null,
           null,
           1,
-          1,
-          null,
           null,
           1,
           1,
@@ -95,8 +99,42 @@
           null,
           null
         ]
+      },
+      "/home/gleb/Documents/kata_project/lib/backstage_item.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          5,
+          5,
+          null,
+          4,
+          4,
+          4,
+          null,
+          null
+        ]
+      },
+      "/home/gleb/Documents/kata_project/lib/aged_brie_item.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          6,
+          null,
+          6,
+          6,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1689534928
+    "timestamp": 1689535844
   }
 }
