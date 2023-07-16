@@ -143,11 +143,10 @@ RSpec.describe GildedRose do
       expect(items[0].sell_in).to eq -2
     end
 
-    it "Brie doesn't lose quality and sell in after due date passing" do
+    it "returns string with all attributes" do
       items = [Item.new("Aged Brie", -1, 50)]
       expect(items[0].to_s).to eq "Aged Brie, -1, 50"
     end
-=begin
 
     it "didn't regressed" do
       expected = "spec/50_test_cases.txt"
@@ -155,6 +154,5 @@ RSpec.describe GildedRose do
 
       expect(IO.read(actual)).to eq IO.read(expected)
     end
-=end
   end
 end
