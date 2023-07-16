@@ -2,6 +2,8 @@
 require 'spec_helper'
 require_relative '../lib/gilded_rose'
 
+# i decided to do refactoring with TDD, so started from covering everything with tests
+
 RSpec.describe GildedRose do
   before(:all) { `ruby texttest_fixture.rb 50 > test.txt` }
   after(:all)  { `rm test.txt` }
@@ -139,6 +141,11 @@ RSpec.describe GildedRose do
       expect(items[0].name).to eq "Aged Brie"
       expect(items[0].quality).to eq 50
       expect(items[0].sell_in).to eq -2
+    end
+
+    it "Brie doesn't lose quality and sell in after due date passing" do
+      items = [Item.new("Aged Brie", -1, 50)]
+      expect(items[0].to_s).to eq "Aged Brie, -1, 50"
     end
 =begin
 
