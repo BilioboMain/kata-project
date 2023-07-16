@@ -2,3 +2,5 @@
 *.iml
 .byebug_history
 .bundle
+coverage
+/coverage/
