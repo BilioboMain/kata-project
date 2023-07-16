@@ -5,6 +5,23 @@ class GildedRose
     @items = items
   end
 
+  def update_quality
+    @items.each do |item|
+      case item.name
+      when 'Aged Brie'
+        update_aged_brie(item)
+      when 'Backstage passes to a TAFKAL80ETC concert'
+        update_backstage_pass(item)
+      when 'Sulfuras, Hand of Ragnaros'
+        next
+      else
+        update_regular(item)
+      end
+    end
+  end
+
+  private
+
   def update_aged_brie(item)
     item.sell_in -= 1
 
@@ -26,20 +43,5 @@ class GildedRose
 
     item.quality -= 1 if item.quality.positive?
     item.quality -= 1 if item.sell_in.negative? && item.quality.positive?
-  end
-
-  def update_quality
-    @items.each do |item|
-      case item.name
-      when 'Aged Brie'
-        update_aged_brie(item)
-      when 'Backstage passes to a TAFKAL80ETC concert'
-        update_backstage_pass(item)
-      when 'Sulfuras, Hand of Ragnaros'
-        next
-      else
-        update_regular(item)
-      end
-    end
   end
 end
