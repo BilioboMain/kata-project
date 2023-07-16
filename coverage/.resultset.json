@@ -35,8 +35,11 @@
           null,
           null,
           null,
-          null,
-          null,
+          null
+        ]
+      },
+      "/home/gleb/Documents/kata_project/lib/item.rb": {
+        "lines": [
           1,
           1,
           null,
@@ -53,6 +56,6 @@
         ]
       }
     },
-    "timestamp": 1689521508
+    "timestamp": 1689523366
   }
 }

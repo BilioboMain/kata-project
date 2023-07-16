@@ -2,6 +2,7 @@
 
 require 'spec_helper'
 require_relative '../lib/gilded_rose'
+require_relative '../lib/item'
 
 # i decided to do refactoring with TDD, so started from covering everything with tests
 
