@@ -14,8 +14,7 @@ items = [
   BackStagePass.new('Backstage passes to a TAFKAL80ETC concert', 15, 20),
   BackStagePass.new('Backstage passes to a TAFKAL80ETC concert', 10, 49),
   BackStagePass.new('Backstage passes to a TAFKAL80ETC concert', 5, 49),
-  # This Conjured item does not work properly yet
-  RegularItem.new('Conjured Mana Cake', 3, 6) # <-- :O
+  ConjuredItem.new('Conjured Mana Cake', 3, 6)
 ]
 
 days = 2
