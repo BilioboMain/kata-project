@@ -1,4 +1,4 @@
-require_relative 'gilded_rose'
+require_relative '../lib/gilded_rose'
 
 RSpec.describe GildedRose do
   describe "#update_quality" do
