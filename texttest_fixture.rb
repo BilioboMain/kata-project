@@ -11,9 +11,9 @@ items = [
   RegularItem.new('Elixir of the Mongoose', 5, 7),
   Item.new('Sulfuras, Hand of Ragnaros', 0, 80),
   Item.new('Sulfuras, Hand of Ragnaros', -1, 80),
-  Item.new('Backstage passes to a TAFKAL80ETC concert', 15, 20),
-  Item.new('Backstage passes to a TAFKAL80ETC concert', 10, 49),
-  Item.new('Backstage passes to a TAFKAL80ETC concert', 5, 49),
+  BackStagePass.new('Backstage passes to a TAFKAL80ETC concert', 15, 20),
+  BackStagePass.new('Backstage passes to a TAFKAL80ETC concert', 10, 49),
+  BackStagePass.new('Backstage passes to a TAFKAL80ETC concert', 5, 49),
   # This Conjured item does not work properly yet
   RegularItem.new('Conjured Mana Cake', 3, 6) # <-- :O
 ]

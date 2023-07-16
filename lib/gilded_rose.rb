@@ -12,7 +12,7 @@ class GildedRose
       when 'Aged Brie'
         item.update
       when 'Backstage passes to a TAFKAL80ETC concert'
-        update_backstage_pass(item)
+        item.update
       when 'Sulfuras, Hand of Ragnaros'
         next
       else

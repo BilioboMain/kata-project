@@ -26,7 +26,7 @@ RSpec.describe GildedRose do
     end
 
     it 'increases item quality in by 2 and decreases sell by 1 in for Backstage passes with quality below 50' do
-      items = [Item.new('Backstage passes to a TAFKAL80ETC concert', 10, 10)]
+      items = [BackStagePass.new('Backstage passes to a TAFKAL80ETC concert', 10, 10)]
       GildedRose.new(items).update_quality
       expect(items[0].name).to eq 'Backstage passes to a TAFKAL80ETC concert'
       expect(items[0].quality).to eq 12
@@ -42,7 +42,7 @@ RSpec.describe GildedRose do
     end
 
     it 'increases item quality by 3 and decreases sell in by 1 for Backstage passes item with quality below 50' do
-      items = [Item.new('Backstage passes to a TAFKAL80ETC concert', 5, 10)]
+      items = [BackStagePass.new('Backstage passes to a TAFKAL80ETC concert', 5, 10)]
       GildedRose.new(items).update_quality
       expect(items[0].name).to eq 'Backstage passes to a TAFKAL80ETC concert'
       expect(items[0].quality).to eq 13
@@ -58,7 +58,7 @@ RSpec.describe GildedRose do
     end
 
     it "doesn't change item quality and decreases sell by 1 in for Backstage passes with quality 50" do
-      items = [Item.new('Backstage passes to a TAFKAL80ETC concert', 10, 50)]
+      items = [BackStagePass.new('Backstage passes to a TAFKAL80ETC concert', 10, 50)]
       GildedRose.new(items).update_quality
       expect(items[0].name).to eq 'Backstage passes to a TAFKAL80ETC concert'
       expect(items[0].quality).to eq 50
@@ -74,7 +74,7 @@ RSpec.describe GildedRose do
     end
 
     it "doesn't change item quality and decreases sell in by 1 for Backstage passes item with quality 50" do
-      items = [Item.new('Backstage passes to a TAFKAL80ETC concert', 5, 50)]
+      items = [BackStagePass.new('Backstage passes to a TAFKAL80ETC concert', 5, 50)]
       GildedRose.new(items).update_quality
       expect(items[0].name).to eq 'Backstage passes to a TAFKAL80ETC concert'
       expect(items[0].quality).to eq 50
@@ -114,7 +114,7 @@ RSpec.describe GildedRose do
     end
 
     it 'pass loses all quality if it is past due date' do
-      items = [Item.new('Backstage passes to a TAFKAL80ETC concert', -1, 49)]
+      items = [BackStagePass.new('Backstage passes to a TAFKAL80ETC concert', -1, 49)]
       GildedRose.new(items).update_quality
       expect(items[0].name).to eq 'Backstage passes to a TAFKAL80ETC concert'
       expect(items[0].quality).to eq 0
