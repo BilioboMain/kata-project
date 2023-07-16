@@ -82,7 +82,7 @@ RSpec.describe GildedRose do
     end
 
     it "doesn't change item quality and sell for Sulfuras, Hand of Ragnaros item with quality 50" do
-      items = [Item.new('Sulfuras, Hand of Ragnaros', 5, 80)]
+      items = [Sulfuras.new('Sulfuras, Hand of Ragnaros', 5, 80)]
       GildedRose.new(items).update_quality
       expect(items[0].name).to eq 'Sulfuras, Hand of Ragnaros'
       expect(items[0].quality).to eq 80
@@ -122,7 +122,7 @@ RSpec.describe GildedRose do
     end
 
     it "Sulfuras, Hand of Ragnaros doesn't lose quality and sell in after due date passing" do
-      items = [Item.new('Sulfuras, Hand of Ragnaros', -1, 80)]
+      items = [Sulfuras.new('Sulfuras, Hand of Ragnaros', -1, 80)]
       GildedRose.new(items).update_quality
       expect(items[0].name).to eq 'Sulfuras, Hand of Ragnaros'
       expect(items[0].quality).to eq 80

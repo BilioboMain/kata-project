@@ -42,3 +42,7 @@ class BackStagePass < RegularItem
     self.quality += 1 if self.sell_in < 5 && (self.quality < 50)
   end
 end
+
+class Sulfuras < RegularItem
+  def update; end
+end
