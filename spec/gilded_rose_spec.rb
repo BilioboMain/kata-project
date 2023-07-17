@@ -168,7 +168,7 @@ RSpec.describe GildedRose do
       expected = 'spec/50_test_cases.txt'
       actual = 'test.txt'
 
-      expect(IO.read(actual)).to eq IO.read(expected)
+      expect(File.read(actual)).to eq File.read(expected)
     end
   end
 end

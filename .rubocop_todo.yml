@@ -9,9 +9,10 @@
 # Offense count: 4
 # Configuration parameters: CountComments, CountAsOne, AllowedMethods, AllowedPatterns.
 # AllowedMethods: refine
+AllCops:
+  NewCops: enable
 Metrics/BlockLength:
   Max: 147
-
 # Offense count: 7
 # Configuration parameters: AllowedConstants.
 Style/Documentation:

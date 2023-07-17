@@ -1,8 +1,8 @@
 #!/usr/bin/ruby -w
 # frozen_string_literal: true
 
-require_relative './lib/gilded_rose'
-require_relative './lib/item'
+require_relative 'lib/gilded_rose'
+require_relative 'lib/item'
 
 puts 'OMGHAI!'
 items = [
